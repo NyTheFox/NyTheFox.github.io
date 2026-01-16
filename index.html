@@ -8,133 +8,270 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
   <h1>Ny</h1>
-  <p>Pixel Artist · Game Developer · Modder SSF2</p>
+  <p class="subtitle">
+    Game Developer · Spriter · Modder · Créateur d’applications
+  </p>
 </header>
 
 <main>
 
-  <!-- MODDING SSF2 -->
-  <section>
-    <h2>🧩 Mods SSF2 — Project PS</h2>
-    <div class="grid">
+<!-- A PROPOS -->
+<section>
+  <h2>👤 À propos</h2>
+  <div class="card">
+    <p>
+      Je m’appelle <strong>Ny</strong>.  
+      Je suis <strong>game developer</strong>, <strong>spriter</strong>, <strong>modder</strong>
+      et <strong>créateur d’applications</strong>.
+    </p>
 
-      <div class="card discord">
-        <h3>Stages personnalisés</h3>
-        <p>Stages créés pour Super Smash Flash 2 (fangame Smash Bros).</p>
-        <div class="media">
-          <img src="images/dive_into_the_heart.jpg" alt="Stage SSF2">
-          <img src="images/sunset_shores.png" alt="Stage SSF2">
-          <img src="images/the last corridor.png" alt="Stage SSF2">
-        </div>
+    <p>
+      Je travaille sur le développement de jeux vidéo, la création de prototypes techniques,
+      le modding avancé et le pixel art. Une grande partie de mon travail est liée à
+      <strong>Super Smash Flash 2</strong>, où je développe des mécaniques et des stages.
+    </p>
+  </div>
+</section>
+
+<!-- PROJECT PS -->
+<section>
+  <h2>🧩 Mods SSF2 — Project PS</h2>
+  <div class="grid">
+
+    <!-- STAGES -->
+    <div class="card">
+      <h3>Stages personnalisés</h3>
+      <p>
+        Stages provenant directement de leurs jeux vidéo d’origine,
+        intégrés et adaptés pour Super Smash Flash 2.
+      </p>
+
+      <div class="media">
+        <figure>
+          <img src="images/dive_into_the_heart.jpg" alt="Dive Into The Heart">
+          <figcaption><strong>Dive Into The Heart</strong> — Kingdom Hearts</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/sunset_shores.png" alt="Sunset Shores">
+          <figcaption><strong>Sunset Shores</strong> — Donkey Kong Country</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/the last corridor.png" alt="The Last Corridor">
+          <figcaption><strong>The Last Corridor</strong> — Undertale</figcaption>
+        </figure>
+      </div>
+
+      <div class="tags">
         <span class="tag">SSF2</span>
+        <span class="tag">Stages</span>
         <span class="tag">Modding</span>
       </div>
+    </div>
 
-      <div class="card discord">
-        <h3>Special Movie — Project PS</h3>
-        <p>Vidéo spéciale présentant l'identité et l'ambiance du mod Project PS.</p>
-        <div class="media">
-          <iframe src="https://www.youtube.com/embed/Y8HBlu41C4k" allowfullscreen></iframe>
-          <a class="yt-fallback" href="https://www.youtube.com/watch?v=Y8HBlu41C4k" target="_blank">
-            ▶ Voir sur YouTube
-          </a>
-        </div>
-        <span class="tag">Special Movie</span>
-        <span class="tag">SSF2</span>
+    <!-- SPECIAL MOVIE -->
+    <div class="card">
+      <h3>Special Movie — Project PS</h3>
+
+      <p>
+        Vidéo célébrant le <strong>100ᵉ projet</strong> et regroupant l’ensemble du travail
+        accompli par l’équipe sur le mod <strong>Project PS</strong>.
+      </p>
+
+      <p>
+        Cette vidéo marque la conclusion du projet et a été montée par
+        <strong>@Lonevthree</strong>.
+      </p>
+
+      <p>
+        Project PS propose une autre façon de jouer à SSF2, avec plus de fun,
+        plus de complexité et un équilibre volontairement moins strict.
+      </p>
+
+      <p>
+        Le mod inclut de nombreux nouveaux personnages, des modifications profondes
+        des personnages existants, des movesets alternatifs selon les costumes
+        et de nouvelles mécaniques comme les Air Grabs, Airdashes,
+        Melee Airdodges, Wavedash, Parry Disable et Final Hit Effect.
+      </p>
+
+      <div class="media">
+        <iframe
+  src="https://www.youtube.com/embed/6n346TD3cDA"
+  title="Godot Visual Novel Prototype"
+  loading="lazy"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen>
+</iframe>
+        <a class="yt-fallback" href="https://www.youtube.com/watch?v=Y8HBlu41C4k" target="_blank">
+          ▶ Voir sur YouTube
+        </a>
       </div>
 
+      <div class="tags">
+        <span class="tag">Project PS</span>
+        <span class="tag">SSF2</span>
+        <span class="tag">Vidéo</span>
+      </div>
     </div>
-  </section>
 
-  <!-- GAME DEV -->
-  <section>
-    <h2>🎮 Game Development — Godot</h2>
-    <div class="grid">
+  </div>
+</section>
 
-      <div class="card discord">
-        <h3>Prototype / Visual Novel</h3>
-        <p>Projet expérimental réalisé avec Godot.</p>
-        <div class="media">
-          <img src="images/courbe sinusoidale.png" alt="Prototype Godot">
+<!-- GODOT -->
+<section>
+  <h2>🎮 Prototypes créés dans Godot</h2>
+  <div class="grid">
 
+    <div class="card">
+      <h3>Prototypes Godot</h3>
+
+      <div class="media">
+        <figure>
+          <img src="images/courbe sinusoidale.png" alt="Courbe sinusoïdale">
+          <figcaption>
+            Point suivant une courbe sinusoïdale entièrement personnalisable
+          </figcaption>
+        </figure>
+
+        <figure>
           <video controls>
             <source src="videos/test.mp4" type="video/mp4">
           </video>
+          <figcaption>
+            Prototype de <strong>fighting game</strong>
+          </figcaption>
+        </figure>
 
-          <iframe src="https://www.youtube.com/embed/6n346TD3cDA" allowfullscreen></iframe>
-          <a class="yt-fallback" href="https://www.youtube.com/watch?v=6n346TD3cDA" target="_blank">
-            ▶ Voir sur YouTube
-          </a>
-        </div>
+        <figure>
+          <iframe
+  src="https://www.youtube.com/embed/6n346TD3cDA"
+  title="Godot Visual Novel Prototype"
+  loading="lazy"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen>
+</iframe>
+          <figcaption>
+            Prototype de <strong>visual novel</strong>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="tags">
         <span class="tag">Godot</span>
+        <span class="tag">Prototype</span>
         <span class="tag">Game Dev</span>
       </div>
-
     </div>
-  </section>
 
-  <!-- GITHUB -->
-  <section>
-    <h2>💻 Projets GitHub</h2>
-    <div class="grid">
-      <div class="card discord">
-        <h3>Custom AI Discord Bot</h3>
-        <p>Bot Discord IA personnalisable (Groq, Gemini, mémoire persistante).</p>
-        <a href="https://github.com/NyTheFox/custom-ai-bot-for-discord" target="_blank">
-          🔗 Voir le projet GitHub
-        </a>
-        <div class="tags">
-          <span class="tag">JavaScript</span>
-          <span class="tag">Node.js</span>
-          <span class="tag">AI</span>
-        </div>
+  </div>
+</section>
+
+<!-- PIXEL ART -->
+<section>
+  <h2>🎨 Pixel Art & Illustrations</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Sprites & Assets</h3>
+
+      <p>
+        Sélection de pixel art réalisés pour le modding, le game dev
+        et des projets personnels, issus de différentes franchises.
+      </p>
+
+      <div class="media">
+
+        <figure>
+          <img src="images/wario bike.png" alt="Wario Bike">
+          <figcaption>
+            
+<strong>Wario</strong> — Sprite en pixel art
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/bike.png" alt="Wario">
+          <figcaption>
+            <strong>Wario Bike</strong> — Sprite inspiré de Smash Bros
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/metal sonic.png" alt="Metal Sonic">
+          <figcaption>
+            <strong>Metal Sonic</strong> — Franchise Sonic
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/mimiqui.png" alt="Mimiqui Pokémon">
+          <figcaption>
+            <strong>Mimiqui</strong> — Pokémon
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/rebelion ui.png" alt="Rebellion Gauge Joker">
+          <figcaption>
+            <strong>Rebellion Gauge</strong> — Joker (Smash Bros), UI en pixel art
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/white len.png" alt="White Len Melty Blood">
+          <figcaption>
+            <strong>White Len</strong> — Melty Blood
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/sonic and shadow.png" alt="Sonic and Shadow">
+          <figcaption>
+            <strong>Sonic & Shadow</strong> — Pose issue de Sonic Adventure 2
+          </figcaption>
+        </figure>
+
       </div>
-    </div>
-  </section>
 
-  <!-- PIXEL ART -->
-  <section>
-    <h2>🎨 Pixel Art</h2>
-    <div class="grid">
-      <div class="card discord">
-        <h3>Sprites & Assets</h3>
-        <p>Pixel art utilisé pour le modding et le game dev.</p>
-        <div class="media">
-          <img src="images/bike.png" alt="Pixel Art">
-          <img src="images/metal sonic.png" alt="Pixel Art">
-          <img src="images/mimiqui.png" alt="Pixel Art">
-          <img src="images/rebelion ui.png" alt="Pixel Art">
-          <img src="images/wario bike.png" alt="Pixel Art">
-          <img src="images/white len.png" alt="Pixel Art">
-          <img src="images/sonic and shadow.png" alt="Pixel Art">
-        </div>
+      <div class="tags">
         <span class="tag">Pixel Art</span>
+        <span class="tag">Sprites</span>
+        <span class="tag">Illustration</span>
       </div>
     </div>
-  </section>
 
-  <!-- SKILLS -->
-  <section>
-    <h2>🛠️ Compétences</h2>
-    <div class="grid">
-      <div class="card discord">
-        Python · GDScript · JavaScript · HTML · CSS
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section>
+  <h2>🛠️ Langages & Compétences</h2>
+  <div class="card skills">
+    <span>Python</span>
+    <span>GDScript</span>
+    <span>JavaScript</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>ActionScript</span>
+  </div>
+</section>
 
 </main>
 
 <footer>
-  © 2026 · Ny · Portfolio Discord Style
+  © 2026 · Ny · Portfolio
 </footer>
 
 </body>
 </html>
-
